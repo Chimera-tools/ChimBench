@@ -92,6 +92,7 @@ then
     echo "  to the predicted junction donor, their acceptor distance to the predicted junction acceptor, the sum of those and the subset of sums that" >&2  
     echo "  are minimum together with their associated reference junctions"
     echo "- other intermediate gff and tsv files"
+    echo "NOTE: cannot be run twice in the same directory without loosing previous outputs since uses fixed names for outputs" >&2  
     echo "" >&2
     exit 1
 else
