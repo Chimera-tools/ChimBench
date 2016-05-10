@@ -22,9 +22,9 @@
 #   since we do not know whether there are other chimeras to be found in this set)
 # - a 1 column file called common.txt with the coordinates of the common chimeric junctions 
 # - a 2 column tsv file called refjunc_closestpred.tsv with the reference junctions which have a close predicted junction (1st col = ref; 2nd col = close)
-# - a file with the predicted junctions (same as 1st input file) but with information about all the reference junctions sharing the same chr and strand
+# - a file with the predicted junctions (same as 2nd input file) but with information about all the reference junctions sharing the same chr and strand
 #   for the two parts of the junction, their donor distance to the predicted junction don, their acceptor distance to the predicted junction acc
-#   the sum of those and the subset of sums that are minimum together with their associated ref junctions
+#   the sum of those and the subset of sums that are minimum together with their associated reference junctions
 # - other intermediate gff and tsv files
 
 # usage
