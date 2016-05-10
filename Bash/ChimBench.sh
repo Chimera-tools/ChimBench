@@ -25,6 +25,7 @@
 # - a file with the predicted junctions (same as 1st input file) but with information about all the reference junctions sharing the same chr and strand
 #   for the two parts of the junction, their donor distance to the predicted junction don, their acceptor distance to the predicted junction acc
 #   the sum of those and the subset of sums that are minimum together with their associated ref junctions
+# - other intermediate gff and tsv files
 
 # usage
 #######
@@ -90,6 +91,7 @@ then
     echo "  with information about all the reference junctions sharing the same chr and strand for the two parts of the junction, their donor distance" >&2  
     echo "  to the predicted junction donor, their acceptor distance to the predicted junction acceptor, the sum of those and the subset of sums that" >&2  
     echo "  are minimum together with their associated reference junctions"
+    echo "- other intermediate gff and tsv files"
     echo "" >&2
     exit 1
 else
