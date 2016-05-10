@@ -80,14 +80,14 @@ then
     echo "Takes as input:" >&2
     echo "- a file with header which 1st column corresponds to ids of chimeric junctions that need to be detected (reference) (in the chimpipe format: donchr_donpos_donstrand:accchr_accpos_accstrand)" >&2
     echo "- a file with header which 1st column corresponds to chimeric junctions that are predicted by a program (in the chimpipe format: donchr_donpos_donstrand:accchr_accpos_accstrand)" >&2
-    echo "- a gff version 2 or gtf file with the gene annotation, that has at least exon rows and where gene_id and transcript_id are the 1st two (key,value) pairs in the 9th field" >&2
+    echo "- a gff version 2 or gtf file with the annotated exons (and more) and where gene_id and transcript_id are the 1st two (key,value) pairs in the 9th field" >&2
     echo "" >&2
     echo "Provides:" >&2
     echo "- on the standard output tabulated information with the number junctions in each file, the number of junctions in common, the number of junctions that are" >&2
     echo "  in one and not in the other and a sensitivity and a precision measure (although for positive sets this precision is an underestimate of the true one" >&2
     echo "  since we do not know whether there are other chimeras to be found in this set)" >&2
     echo "- a 1 column file called common.txt with the coordinates of the common chimeric junctions" >&2
-    echo "- an 8 column tsv file called ref_junc_belonging_to_common_gnpairs_vs_pred_same.tsv with the predicted junctions (same as 1st input file) but" >&2 
+    echo "- an 8 column tsv file called ref_junc_belonging_to_common_gnpairs_vs_pred_same.tsv with the predicted junctions (same as 2nd input file) but" >&2 
     echo "  with information about all the reference junctions sharing the same chr and strand for the two parts of the junction, their donor distance" >&2  
     echo "  to the predicted junction donor, their acceptor distance to the predicted junction acceptor, the sum of those and the subset of sums that" >&2  
     echo "  are minimum together with their associated reference junctions"
