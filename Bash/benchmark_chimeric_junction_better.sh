@@ -14,7 +14,7 @@
 # - a file with header which 1st column corresponds to the chimeric junctions that are predicted by a program 
 #   (in the chimpipe format: donchr_donpos_donstrand:accchr_accpos_accstrand)
 # - a file with the gene annotation in gff 2 format with at least exon rows and with gene_id and transcript_id as first two
-#   (key,value) pairs
+#   (key,value) pairs in the 9th field
 # Provides:
 ###########
 # - on the standard output tabulated information with the number junctions in each file, the number of junctions in common, the number of junctions that are 
@@ -79,7 +79,7 @@ then
     echo "Takes as input:" >&2
     echo "- a file with header which 1st column corresponds to ids of chimeric junctions that need to be detected (reference) (in the chimpipe format: donchr_donpos_donstrand:accchr_accpos_accstrand)" >&2
     echo "- a file with header which 1st column corresponds to chimeric junctions that are predicted by a program (in the chimpipe format: donchr_donpos_donstrand:accchr_accpos_accstrand)" >&2
-    echo "- a gff version 2 or gtf file with the gene annotation, that has at least exon rows and where gene_id and transcript_id are the 1st two (key,value) pairs" >&2
+    echo "- a gff version 2 or gtf file with the gene annotation, that has at least exon rows and where gene_id and transcript_id are the 1st two (key,value) pairs in the 9th field" >&2
     echo "" >&2
     echo "Provides:" >&2
     echo "- on the standard output tabulated information with the number junctions in each file, the number of junctions in common, the number of junctions that are" >&2
