@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# benchmark_chimeric_junction_better.sh
+# ChimBench.sh
 # Script that provides several numbers to assess sensitivity (sn) and precision (pr) of a program that 
 # produces chimeric junctions (from rnaseq) of a sample with respect to a list of reference junctions known 
 # to be present (in the same sample)
@@ -28,7 +28,7 @@
 
 # usage
 #######
-# benchmark_chimeric_junction_better.sh ref_junctions.txt pred_junctions.txt annot.gff > report.tsv 2> benchmark_chimeric_junction_better.err
+# ChimBench.sh ref_junctions.txt pred_junctions.txt annot.gff > report.tsv 2> benchmark_chimeric_junction_better.err
 
 
 # To improve
@@ -44,7 +44,7 @@
 # cd /no_backup/rg/sdjebali/Chimeras/ChimPipe/benchmark/ChimPipe-0.9.1/Edgren/pooled/Final
 # ref=/users/rg/sdjebali/Chimeras/Benchmark/Data/Edgren/DoneByBR_Blat/Edgren_juncid_gnname_ss_sample.tsv 
 # annot=/users/rg/projects/encode/scaling_up/whole_genome/Gencode/version19/Long/gencode.v19.annotation.long.gtf
-# time benchmark_chimeric_junction_better.sh $ref ../chimericJunctions_pooled.txt $annot > benchmark_report.tsv 2> benchmark_chimeric_junction_better.err &
+# time ChimBench.sh $ref ../chimericJunctions_pooled.txt $annot > benchmark_report.tsv 2> benchmark_chimeric_junction_better.err &
 # real    0m23.777s
 
 # main output is this summary
@@ -74,7 +74,7 @@ then
     echo "" >&2
     echo USAGE: >&2
     echo "" >&2
-    echo "benchmark_chimeric_junction_better.sh ref_junctions.txt pred_junctions.txt annot.gff" >&2
+    echo "ChimBench.sh ref_junctions.txt pred_junctions.txt annot.gff" >&2
     echo "" >&2
     echo "Takes as input:" >&2
     echo "- a file with header which 1st column corresponds to ids of chimeric junctions that need to be detected (reference) (in the chimpipe format: donchr_donpos_donstrand:accchr_accpos_accstrand)" >&2
