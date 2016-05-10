@@ -23,3 +23,4 @@ Provides:
 - an 8 column tsv file called ref_junc_belonging_to_common_gnpairs_vs_pred_same.tsv with the predicted junctions (same as 2nd input file) but with information about all the reference junctions sharing the same chromosome and strand for the two parts of the junction, their donor distance to the predicted junction donor, their acceptor distance to the predicted junction acceptor, the sum of those and the subset of sums that are minimum together with their associated reference junctions
 - other intermediate gff and tsv files
 
+NOTE: cannot be run twice in the same directory without loosing previous outputs since uses fixed names for outputs 
