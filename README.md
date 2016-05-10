@@ -6,11 +6,11 @@ From a set of reference chimeric exonic junctions, a set of predicted chimeric e
 To clone the repository do:
 git clone https://github.com/Chimera-tools/ChimBench.git
 
-Running Bash/benchmark_chimeric_junction_better.sh will provide usage
+Running Bash/ChimBench.sh will provide usage
 
 USAGE:
 
-benchmark_chimeric_junction_better.sh ref_junctions.txt pred_junctions.txt annot.gff
+ChimBench.sh ref_junctions.txt pred_junctions.txt annot.gff
 
 Takes as input:
 - a file with header which 1st column corresponds to ids of chimeric junctions that need to be detected (reference) (in the chimpipe format: donchr_donpos_donstrand:accchr_accpos_accstrand)
