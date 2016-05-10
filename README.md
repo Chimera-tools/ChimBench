@@ -20,6 +20,6 @@ Takes as input:
 Provides:
 - on the standard output tabulated information with the number junctions in each file, the number of junctions in common, the number of junctions that are in one and not in the other and a sensitivity and a precision measure (although for positive sets this precision is an underestimate of the true one since we do not know whether there are other chimeras to be found in this set)
 - a 1 column file called common.txt with the coordinates of the common chimeric junctions
-- an 8 column tsv file with the predicted junctions (same as 1st input file) but with information about all the reference    junctions sharing the same chromosome and strand for the two parts of the junction, their donor distance to the predicted   junction donor, their acceptor distance to the predicted junction acceptor, the sum of those and the subset of sums that   are minimum together with their associated ref junctions
+- an 8 column tsv file with the predicted junctions (same as 1st input file) but with information about all the reference junctions sharing the same chromosome and strand for the two parts of the junction, their donor distance to the predicted junction donor, their acceptor distance to the predicted junction acceptor, the sum of those and the subset of sums that   are minimum together with their associated ref junctions
 - other intermediate gff and tsv files
 
